@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+
+<body>
+    <table>
+        <!-- for every Item object in the List added into cart using model.add -->
+        <tr data-th-each="item: ${cart}">
+            <!-- retrieving instance variables with getters -->
+            <td data-th-text="${item.itemName}"></td>
+            <td data-th-text="${item.quantity}"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

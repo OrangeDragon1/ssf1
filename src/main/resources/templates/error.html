@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+</head>
+
+<body>
+    <h1>An error has occured</h1>
+    <h2 data-th-text="|${error} - ${message}|"></h2>
+    <div>
+        <img data-th-src="@{/404.png}">
+    </div>
+    <p>There seems to be an error with the following request
+        <span data-th-src="${path}"></span>
+    </p>
+</body>
+
+</html>

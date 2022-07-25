@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <div data-th-if="${currHour le 11}">Good Morning</div>
+    <div data-th-unless="${currHour le 11}">Good Afternoon</div>
+    <!-- <div data-th-text="${currHour}"></div> -->
+    <!-- <span data-th-text="${currHour}"></span> -->
+    <!-- <div data-th-text="${currTime}"></div> -->
+    <span data-th-text="${currTime}"></span>
+    <h1>Menu</h1>
+    <a href="/cartpage">Cart Page</a><br>
+    <a href="/weather">Weather Page</a><br>
+    <a href="">Link 3</a><br>
+    <a href="">Link 4</a><br>
+    <a href="">Link 5</a><br>
+    <a href="">Link 6</a>
+</body>
+
+</html>
