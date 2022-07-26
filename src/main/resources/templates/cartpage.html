@@ -10,7 +10,7 @@
 
 <body>
     <table>
-        <!-- for every Item object in the List added into cart using model.add -->
+        <!-- for every object in the List added into cart using model.add -->
         <tr data-th-each="item: ${cart}">
             <!-- retrieving instance variables with getters -->
             <td data-th-text="${item.itemName}"></td>
